@@ -1,0 +1,108 @@
+<html>
+	
+<script language="javascript" type="text/javascript">
+function validar() {
+var codigo = form1.codigo.value;
+var nome = form1.nome.value;
+var rua = form1.rua.value;
+var num_complemento = form1.num_complemento.value;
+var bairro = form1.bairro.value;
+var cidade = form1.cidade.value;
+var estado = form1.estado.value;
+var data_inicial = form1.data_inicial.value;
+var data_final = form1.data_final.value;
+	
+	if (codigo == "") {
+		alert('Preencha o campo com seu codigo');
+		form1.codigo.focus();
+		return false;
+	}
+	
+	if (nome == "") {
+		alert('Preencha o campo com o nome');
+		form1.nome.focus();
+		return false;
+	}
+	
+	if (rua == "") {
+		alert('Preencha o campo com a rua');
+		form1.rua.focus();
+		return false;
+	}
+	
+	if (num_complemento == "") {
+		alert('Preencha o campo com o complemento');
+		form1.num_complemento.focus();
+		return false;
+	}
+	
+	if (bairro == "") {
+		alert('Preencha o campo com bairro');
+		form1.bairro.focus();
+		return false;
+	}
+	
+	if (cidade == "") {
+		alert('Preencha o campo com a cidade');
+		form1.cidade.focus();
+		return false;
+	}
+	
+	if (estado == "") {
+		alert('Preencha o campo com o estado');
+		form1.estado.focus();
+		return false;
+	}
+	
+	if (data_inicial == "") {
+		alert('Preencha o campo com a data inicial de vigencia');
+		form1.data_inicial.focus();
+		return false;
+	}
+	
+	if (data_final == "") {
+		alert('Preencha o campo com a data final de vigencia');
+		form1.data_inicial.focus();
+		return false;
+	}
+
+}
+</script>
+   <body>
+      <form name="form1" action="" method="post" enctype="multipart/form-data">
+         <fieldset>
+			<label for="nome">Codigo<font size="3" color="red">*</font>:</label>
+            <input type="text" id="codigo" name="codigo" placeholder="C&oacute;digo da Empresa" />
+            <br />
+            <label for="nome">Nome<font size="3" color="red">*</font>:</label>
+            <input type="text" id="nome" name="nome" placeholder="Entre com o nome da empresa" />
+            <br />
+            <label for="rua">Rua<font size="3" color="red">*</font>:</label>
+            <input type="text" id="rua" name="rua" />
+            <br />
+            <label for="num_complemento">Num/Complemento<font size="3" color="red">*</font>:</label>
+            <input type="text" id="num_complemento" name="num_complemento"  />
+            <br />
+			<label for="bairro">Bairro<font size="3" color="red">*</font>:</label>
+            <input type="text" id="bairro" name="bairro"  />
+            <br />
+			<label for="Cidade">Cidade<font size="3" color="red">*</font>:</label>
+            <input type="text" id="cidade" name="cidade"  />
+            <br />
+			<label for="Estado">Estado<font size="3" color="red">*</font>:</label>
+            <input type="text" id="estado" name="estado"  />
+            <br />
+			<label for="name">Data Inicial Vigencia<font size="3" color="red">*</font>:</label>
+            <input type="text" id="data_inicial" name="data_inicial"  />
+            <br />
+			<label for="name">Data Final Vigencia<font size="3" color="red">*</font>:</label>
+            <input type="text" id="data_final" name="data_final"  />
+            <br />
+			<label for="name">Numero Agentes Seguran&ccedil;a:</label>
+            <input type="text" id="numero_agentes" name="numero_agentes"  />
+            <br />
+            <input type="submit" value="Incluir Empresa" onclick="return validar()" />
+         </fieldset>
+      </form>
+   </body>
+</html>

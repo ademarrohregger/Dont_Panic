@@ -1,0 +1,82 @@
+<html>
+	
+<script language="javascript" type="text/javascript">
+function validar() {
+var id_area = formCadArea.id_area.value;
+var nome_area = formCadArea.nome_area.value;
+var latitude_a = formCadArea.latitude_a.value;
+var longitude_a = formCadArea.longitude_a.value;
+var latitude_b = formCadArea.latitude_b.value;
+var latitude_b = formCadArea.latitude_b.value;
+	
+	if (id_area == "") {
+		alert('Preencha o campo com seu codigo');
+		formCadArea.id_area.focus();
+		return false;
+	}
+	
+	if (nome_area == "") {
+		alert('Preencha o campo com o nome');
+		formCadArea.nome_area.focus();
+		return false;
+	}
+	
+	if (latitude_a == "") {
+		alert('Preencha a latitude A');
+		formCadArea.latitude_a.focus();
+		return false;
+	}
+	
+	if (longitude_a == "") {
+		alert('Preencha a longitude A');
+		formCadArea.longitude_a.focus();
+		return false;
+	}
+	
+	if (latitude_b == "") {
+		alert('Preencha a latitude B');
+		formCadArea.latitude_b.focus();
+		return false;
+	}
+	
+	if (longitude_b == "") {
+		alert('Preencha a longitude B');
+		formCadArea.longitude_b.focus();
+		return false;
+		
+	if (id_empresa == "") {
+		alert('Preencha o ID da empresa');
+		formCadArea.id_empresa.focus();
+		return false;
+	}
+}
+</script>
+   <body>
+      <form name="formCadArea" action="" method="post" enctype="multipart/form-data">
+         <fieldset>
+            <label for="nome">ID da Area<font size="3" color="red">*</font>:</label>
+            <input type="text" id="id_area" name="id_area"  />
+            <br />
+            <label for="nome">Nome da Area<font size="3" color="red">*</font>:</label>
+            <input type="text" id="nome_area" name="nome_area"  />
+            <br />
+            <label for="nome">Latitude A<font size="3" color="red">*</font>:</label>
+            <input type="text" id="latitude_a" name="nome_area"  />
+            <br />
+            <label for="nome">Longitude A<font size="3" color="red">*</font>:</label>
+            <input type="text" id="longitude_a" name="nome_area"  />
+            <br />
+            <label for="nome">Latitude B<font size="3" color="red">*</font>:</label>
+            <input type="text" id="latitude_b" name="nome_area"  />
+            <br />
+            <label for="nome">Longitude B<font size="3" color="red">*</font>:</label>
+            <input type="text" id="longitude_b" name="nome_area"  />
+            <br />
+            <label for="nome">ID Empresa<font size="3" color="red">*</font>:</label>
+            <input type="text" id="id_empresa" name="id_empresa"  />
+            <br />
+            <input type="submit" value="Incluir Area" onclick="return validar()" />
+         </fieldset>
+      </form>
+   </body>
+</html>
